@@ -1,7 +1,7 @@
 <?php
 
-$project = $_ENV["project"];
-$site_name = $_ENV["site_name"];
+$project = $_ENV["PROJECT"];
+$site_name = $_ENV["SITE_NAME"];
 $host = $_ENV["HOST"];
 
 ?>
