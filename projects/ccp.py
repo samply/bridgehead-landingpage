@@ -11,4 +11,5 @@ services = [
     Service(ServiceGroup.OPERATIONS, "Zentrales Monitoring", "https://monitor.vmitro.de/icingaweb2/", ServiceType.CENTRAL),
     Service(ServiceGroup.OPERATIONS, "Reverse Proxy (Traefik)", "https://<THISHOST>/dashboard", ServiceType.BRIDGEHEAD),
     Service(ServiceGroup.PERSISTENCE, "FHIR-Server (Blaze)", "https://<THISHOST>/ccp-localdatamanagement/fhir", ServiceType.BRIDGEHEAD)
+    Service(ServiceGroup.OPERATIONS, "Lokales Monitoring", "https://monitor.vmitro.de/icingaweb2/", ServiceType.BRIDGEHEAD)
 ]
