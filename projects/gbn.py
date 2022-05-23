@@ -7,5 +7,5 @@ services = [
     Service(ServiceGroup.SEARCH, "Sample Locator (BBMRI-ERIC)", "https://locator.bbmri-eric.eu", ServiceType.CENTRAL),
     Service(ServiceGroup.NEGOTIATION, "Negotiator", "https://negotiator.bbmri-eric.eu", ServiceType.CENTRAL),
     Service(ServiceGroup.OPERATIONS, "Reverse Proxy (Traefik)", "https://<THISHOST>/dashboard", ServiceType.BRIDGEHEAD),
-    Service(ServiceGroup.PERSISTENCE, "FHIR-Server (Blaze)", "https://<THISHOST>/ccp-localdatamanagement/fhir", ServiceType.BRIDGEHEAD)
+    Service(ServiceGroup.PERSISTENCE, "FHIR-Server (Blaze)", "https://<THISHOST>/gbn-localdatamanagement/fhir", ServiceType.BRIDGEHEAD)
 ]
