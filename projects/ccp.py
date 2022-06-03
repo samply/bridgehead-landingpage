@@ -10,5 +10,7 @@ services = [
     Service(ServiceGroup.OPERATIONS, "Deployment-Server", "https://deployment.ccp-it.dktk.dkfz.de", ServiceType.CENTRAL),
     Service(ServiceGroup.OPERATIONS, "Zentrales Monitoring", "https://monitor.vmitro.de/icingaweb2/", ServiceType.CENTRAL),
     Service(ServiceGroup.OPERATIONS, "Reverse Proxy (Traefik)", "https://<THISHOST>/dashboard", ServiceType.BRIDGEHEAD),
-    Service(ServiceGroup.PERSISTENCE, "FHIR-Server (Blaze)", "https://<THISHOST>/ccp-localdatamanagement/fhir", ServiceType.BRIDGEHEAD)
+    Service(ServiceGroup.SEARCH, "Connector(Teiler)", "https://<THISHOST>/ccp-connector", ServiceType.BRIDGEHEAD),
+    Service(ServiceGroup.PERSISTENCE, "Samply Store", "https://<THISHOST>/ccp-localdatamanagement", ServiceType.BRIDGEHEAD)
+
 ]
