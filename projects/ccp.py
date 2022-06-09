@@ -11,6 +11,6 @@ services = [
     Service(ServiceGroup.OPERATIONS, "Zentrales Monitoring", "https://monitor.vmitro.de/icingaweb2/", ServiceType.CENTRAL),
     Service(ServiceGroup.OPERATIONS, "Reverse Proxy (Traefik)", "https://<THISHOST>/dashboard", ServiceType.BRIDGEHEAD),
     Service(ServiceGroup.SEARCH, "Connector(Teiler)", "https://<THISHOST>/ccp-connector", ServiceType.BRIDGEHEAD),
-    Service(ServiceGroup.PERSISTENCE, "Samply Store", "https://<THISHOST>/ccp-localdatamanagement", ServiceType.BRIDGEHEAD)
-
+    Service(ServiceGroup.PERSISTENCE, "Samply Store", "https://<THISHOST>/ccp-localdatamanagement", ServiceType.BRIDGEHEAD),
+    Service(ServiceGroup.SEARCH, "ID-Manager", "https://<THISHOST>/idmanager", ServiceType.BRIDGEHEAD)
 ]
