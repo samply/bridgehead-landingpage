@@ -3,13 +3,13 @@ name: Build the bridgehead-landingpage
 on:
   push:
     branches:
-      - master
+      - main
       - develop
     tags:
       - 'v*.*.*'
   pull_request:
     branches:
-      - master
+      - main
       - develop
 
 jobs:
