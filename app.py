@@ -15,7 +15,7 @@ def prepare_vars(required_vars):
         globals()[var] = environ.get(var)
 
 
-prepare_vars(["PROJECT", "SITE_NAME", "HOST", "FLASK_ENV"])
+prepare_vars(["PROJECT", "SITE_NAME", "HOST", "ENVIRONMENT"])
 project = import_module(f"projects.{PROJECT.lower()}")
 
 
@@ -23,7 +23,7 @@ project = import_module(f"projects.{PROJECT.lower()}")
 def page():
     return render_template('page.template',
                            site_name=SITE_NAME,
-                           FLASK_ENV=FLASK_ENV,
+                           ENVIRONMENT=environ.get("ENVIRONMENT"),
                            thishostname=HOST,
                            project=PROJECT,
                            projectname=project.projectname_friendly,
